@@ -1,8 +1,28 @@
 aid: oumi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oumi.png
 name: Oumi
-description: 'Oumi is a company surfaced as a portfolio company of obvious-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: economic-health. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Oumi (Open Universal Machine Intelligence) is an open-source, Apache-2.0 platform for
+  ML engineers and researchers to train, fine-tune, evaluate, and deploy foundation
+  models (LLMs and VLMs) through a single unified interface. It ships as a Python
+  library and a first-party command-line tool (train, evaluate, infer, launch, deploy,
+  analyze, synth, tune) covering the full model development lifecycle — data synthesis,
+  supervised fine-tuning, DPO/preference learning, evaluation judges, quantization,
+  hyperparameter tuning, and inference across local, cloud, and HPC targets. A hosted
+  managed platform (platform.oumi.ai) adds a Free/Pro/Enterprise product layer, and an
+  oumi-mcp Model Context Protocol server exposes Oumi to MCP-capable assistants such as
+  Claude and Cursor. Backed by Obvious Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/oumi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +32,69 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Economic Health
-apis: []
+- Artificial Intelligence
+- Machine Learning
+- LLM
+- Foundation Models
+- Fine-Tuning
+- Model Training
+- Open Source
+- MLOps
+- Developer Tools
+- Inference
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
+- type: DomainSecurity
+  url: security/oumi-domain-security.yml
 - type: Website
   url: https://oumi.ai
+- type: DeveloperPortal
+  url: https://platform.oumi.ai
+- type: Portal
+  url: https://platform.oumi.ai
+- type: Documentation
+  url: https://oumi.ai/docs
+- type: APIReference
+  url: https://oumi.ai/docs/en/latest/api/oumi.html
+- type: GettingStarted
+  url: https://oumi.ai/docs/en/latest/get_started/quickstart.html
+- type: Support
+  url: https://discord.gg/oumi
+- type: Blog
+  url: https://oumiai.substack.com
+- type: GitHubOrganization
+  url: https://github.com/oumi-ai
+- type: Pricing
+  url: https://oumi.ai/pricing
+- type: SignUp
+  url: https://platform.oumi.ai/signin
+- type: MCPServer
+  url: mcp/oumi-mcp.yml
+- type: CLI
+  url: cli/oumi-cli.yml
+- type: Packages
+  url: packages/oumi-packages.yml
+- type: SDKs
+  url: packages/oumi-packages.yml
+- type: ChangeLog
+  url: changelog/oumi-changelog.yml
+- type: Lifecycle
+  url: lifecycle/oumi-lifecycle.yml
+- type: LLMsTxt
+  url: llms/oumi-llms.txt
+- type: WellKnown
+  url: well-known/oumi-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

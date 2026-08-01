@@ -1,0 +1,47 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/oumi-ai/oumi/releases
+description: >-
+  Oumi is versioned as a Python package released on GitHub Releases (26 releases
+  to date) and PyPI. Semantic-versioning scheme, current line 0.x. Recent window
+  captured from the GitHub Releases page.
+scheme: semver
+current_version: '0.8'
+changelog_url: https://github.com/oumi-ai/oumi/releases
+entries:
+- version: '0.8'
+  date: '2026-05-07'
+  breaking: false
+  highlights:
+  - Added `oumi deploy` CLI for deploying models to inference endpoints.
+  - Introduced the `oumi-mcp` Model Context Protocol server for Claude/Cursor.
+- version: '0.7'
+  date: '2026-01-29'
+  breaking: true
+  highlights:
+  - Added Fireworks and OpenRouter inference engines.
+  - Added rule-based evaluation judges.
+  - Dropped Python 3.9 support.
+- version: '0.6.0'
+  date: '2025-12-17'
+  breaking: false
+  highlights:
+  - Launched `oumi analyze` CLI for dataset inspection.
+  - Added TRL GOLD trainer for preference learning.
+- version: '0.5.0'
+  date: '2025-11-18'
+  breaking: false
+  highlights:
+  - Introduced data synthesis module (`oumi synth`).
+  - Introduced hyperparameter tuning module (`oumi tune`).
+  - Added AWS Bedrock integration.
+- version: '0.4.2'
+  date: '2025-10-20'
+  breaking: false
+  highlights:
+  - Added Qwen3-VL support and NERSC Perlmutter HPC compatibility.
+- version: '0.4.1'
+  date: '2025-10-14'
+  breaking: false
+  highlights:
+  - Fixed dataset analyzer NaN handling; pinned uvicorn for SkyPilot compatibility.

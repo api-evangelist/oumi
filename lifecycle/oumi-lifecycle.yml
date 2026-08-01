@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/oumi-ai/oumi/releases
+description: >-
+  Release and versioning posture for the open-source Oumi project. Oumi follows
+  semantic versioning published via GitHub Releases and PyPI. No formal dated
+  deprecation policy, published SLA, or hosted status page was found for the
+  open-source project at capture time (the managed platform.oumi.ai product may
+  publish SLAs under Enterprise plans).
+versioning:
+  scheme: semver
+  current: '0.8'
+  distribution:
+  - GitHub Releases
+  - PyPI
+  docs: https://github.com/oumi-ai/oumi/releases
+deprecation:
+  policy_url: null
+  notes: >-
+    Breaking changes are announced in release notes (e.g. v0.7 dropped Python 3.9
+    support). No standalone dated deprecation policy document was found.
+sla:
+  url: null
+status_page: null

@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://pypi.org/project/oumi/
+description: >-
+  First-party Oumi client library and tools. Oumi ships primarily as a single
+  Python package that provides both the importable library (oumi.core,
+  oumi.datasets, oumi.inference, ...) and the `oumi` command-line tool via
+  console_scripts entry points. Verified against the public PyPI registry and the
+  GitHub source repository.
+packages:
+- language: python
+  registry: pypi
+  name: oumi
+  url: https://pypi.org/project/oumi/
+  source: https://github.com/oumi-ai/oumi
+  install: pip install oumi
+  version: '0.8'
+  official: true
+  notes: >-
+    The Python library plus the `oumi` CLI (train, evaluate, infer, launch,
+    deploy, analyze, synth, tune). Extras such as `pip install oumi[gpu]` and
+    `oumi[dev]` add optional dependencies.

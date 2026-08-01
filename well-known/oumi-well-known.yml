@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/ on Oumi hosts
+description: >-
+  Probe of the standard /.well-known/ discovery surface on the Oumi website and
+  hosted platform. No documents were served at capture time (all 404). Absence is
+  recorded as valid data.
+hosts:
+- host: https://oumi.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://platform.oumi.ai
+  documents:
+  - {path: /.well-known/security.txt, status: 404}

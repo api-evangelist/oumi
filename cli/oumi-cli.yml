@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://oumi.ai/docs/en/latest/cli/commands.html
+description: >-
+  The Oumi first-party command-line tool. Installed with the `oumi` PyPI package
+  (see packages/oumi-packages.yml) and exposed via console_scripts entry points.
+  It drives the full foundation-model development lifecycle — training,
+  evaluation, inference, data synthesis, hyperparameter tuning, and deployment —
+  from local machines to cloud and HPC clusters.
+docs: https://oumi.ai/docs/en/latest/cli/commands.html
+repo: https://github.com/oumi-ai/oumi
+install:
+  pip: pip install oumi
+  usage: oumi <command> -c <config.yaml>
+commands:
+  training:
+  - {name: train, description: "Train or fine-tune (SFT/PEFT/DPO) a model from a YAML recipe config."}
+  - {name: tune, description: "Run hyperparameter tuning sweeps over training configs (added in v0.5.0)."}
+  evaluation:
+  - {name: evaluate, description: "Evaluate a model against benchmarks and rule-based / judge evaluators."}
+  - {name: judge, description: "Run LLM-as-judge / rule-based judgments over model outputs."}
+  - {name: analyze, description: "Inspect and analyze datasets (dataset analyzer, added in v0.6.0)."}
+  inference:
+  - {name: infer, description: "Run batch or interactive inference against local or remote engines (vLLM, SGLang, Fireworks, OpenRouter, Bedrock, ...)."}
+  data:
+  - {name: synth, description: "Synthesize training data from identified failure modes (data synthesis module, added in v0.5.0)."}
+  jobs_deploy:
+  - {name: launch, description: "Launch remote training/eval/inference jobs on cloud or HPC clusters via SkyPilot."}
+  - {name: deploy, description: "Deploy a trained model to an inference endpoint (added in v0.8)."}
+  utility:
+  - {name: env, description: "Print the Oumi environment and dependency diagnostics."}

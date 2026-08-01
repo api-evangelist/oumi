@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://github.com/oumi-ai/oumi/releases/tag/v0.8
+description: >-
+  Oumi ships a first-party Model Context Protocol (MCP) server, `oumi-mcp`,
+  introduced in the v0.8 release (May 2026) for integration with MCP-capable
+  assistants such as Claude and Cursor. It exposes Oumi's model-development
+  workflow (training, evaluation, inference, data synthesis) to agentic clients
+  over MCP. Distributed with the open-source Oumi project (Apache-2.0).
+server:
+  name: oumi-mcp
+  transport: stdio
+  repo: https://github.com/oumi-ai/oumi
+  client_targets:
+  - Claude
+  - Cursor
+notes: >-
+  Packaged as part of the Oumi project ("MCP Integration Phase 1" scaffold in
+  v0.8). A tool catalog was not published verbatim at capture time; tools mirror
+  the CLI surface (train, evaluate, infer, synth). See cli/oumi-cli.yml.
