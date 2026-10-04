@@ -48,12 +48,12 @@ tags:
 - Company
 - Economic Health
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - LLM
 - Foundation Models
 - Fine-Tuning
 - Model Training
-- Open-Source
+- Open Source
 - MLOps
 - Developer Tools
 - Inference
@@ -70,6 +70,8 @@ tags_raw:
 - MLOps
 - Developer Tools
 - Inference
+- Machine-Learning
+- Open-Source
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
