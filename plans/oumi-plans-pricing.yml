@@ -1,0 +1,141 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://oumi.ai/pricing
+sources:
+- https://oumi.ai/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: per-call
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: BYOC - VPC & on-prem
+  managed_tier: Pro
+published: true
+note: Tiered plans plus detailed per-token, per-judgment, per-row, per-GB and per-GPU-hour usage rates;
+  large inference model price table also listed (per 1M input/output tokens). FAQ mentions 'Is Oumi open
+  source?' but no license stated.
+plan_count: 20
+currency: USD
+plans:
+- name: Free
+  price_text: $0
+  price: 0
+  currency: USD
+  period: month
+  included_quota: Up to $50 in credits for 3 months
+- name: Pro
+  price_text: $25/month
+  price: 25
+  currency: USD
+  period: month
+  included_quota: '$25/month credits platform-wide; Download model weights: 1 / month'
+  overage: pay-as-you-go after
+- name: Enterprise
+  price_text: Custom
+  period: none
+  included_quota: Everything in Pro; BYOC - VPC & on-prem
+- name: Oumi Agent tokens - Input
+  price_text: $6.25
+  price: 6.25
+  currency: USD
+  period: per-use
+  unit: per 1M input tokens
+- name: Oumi Agent tokens - Output
+  price_text: $31.25
+  price: 31.25
+  currency: USD
+  period: per-use
+  unit: per 1M output tokens
+- name: Oumi Agent tokens - Cache write
+  price_text: $7.80
+  price: 7.8
+  currency: USD
+  period: per-use
+  unit: per 1M tokens
+- name: Oumi Agent tokens - Cache read
+  price_text: $0.65
+  price: 0.65
+  currency: USD
+  period: per-use
+  unit: per 1M tokens
+- name: Evaluation
+  price_text: 1,000 judgments / $1
+  currency: USD
+  period: per-use
+  unit: judgments
+- name: Data Synthesis
+  price_text: 1,000 rows / $1
+  currency: USD
+  period: per-use
+  unit: rows
+- name: Storage
+  price_text: 4 GB/month / $1
+  currency: USD
+  period: month
+  unit: GB
+- name: SFT up to 16B
+  price_text: $0.49
+  price: 0.49
+  currency: USD
+  period: per-use
+  unit: per 1M training tokens
+- name: SFT 16.1–32B
+  price_text: $2.00
+  price: 2
+  currency: USD
+  period: per-use
+  unit: per 1M training tokens
+- name: SFT 32.1–80B
+  price_text: $3.00
+  price: 3
+  currency: USD
+  period: per-use
+  unit: per 1M training tokens
+- name: SFT 80.1–300B
+  price_text: $6.00
+  price: 6
+  currency: USD
+  period: per-use
+  unit: per 1M training tokens
+- name: On-Policy Distillation A100-80GB
+  price_text: $2.90
+  price: 2.9
+  currency: USD
+  period: per-use
+  unit: GPU-hr
+- name: On-Policy Distillation H100-80GB
+  price_text: $4.00
+  price: 4
+  currency: USD
+  period: per-use
+  unit: GPU-hr
+- name: Production Inference A100-80GB
+  price_text: $3.00
+  price: 3
+  currency: USD
+  period: per-use
+  unit: GPU-hr
+- name: Production Inference H100-80GB
+  price_text: $7.00
+  price: 7
+  currency: USD
+  period: per-use
+  unit: GPU-hr
+- name: Production Inference H200-141GB
+  price_text: $7.00
+  price: 7
+  currency: USD
+  period: per-use
+  unit: GPU-hr
+- name: Production Inference B200-180GB
+  price_text: $10.00
+  price: 10
+  currency: USD
+  period: per-use
+  unit: GPU-hr
