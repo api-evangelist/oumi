@@ -79,6 +79,8 @@ maintainers:
   email: info@apis.io
 apis: []
 common:
+- type: Plans
+  url: plans/oumi-plans-pricing.yml
 - url: https://oumi.ai/blog
   type: Blog
 - url: https://oumi.ai/blog/rss.xml
